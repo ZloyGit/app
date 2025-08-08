@@ -88,18 +88,38 @@ const AboutSection = () => {
             </div>
           </div>
 
-          <div className="advantages-grid">
-            {advantages.map((advantage, index) => (
-              <div key={index} className="advantage-card">
-                <div className="advantage-icon">
-                  {advantage.icon}
+          <div className="about-visual">
+            <div className="about-image">
+              <img 
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHw0fHxJVCUyMHNlcnZpY2VzfGVufDB8fHx8MTc1NDYxMzMyNHww&ixlib=rb-4.1.0&q=85"
+                alt="Команда IT-Восток"
+                className="about-main-image"
+              />
+              <div className="about-image-stats">
+                <div className="image-stat">
+                  <div className="stat-number">99.9%</div>
+                  <div className="stat-label">Uptime</div>
                 </div>
-                <h3 className="heading-3 advantage-title">{advantage.title}</h3>
-                <p className="body-medium advantage-description">
-                  {advantage.description}
-                </p>
+                <div className="image-stat">
+                  <div className="stat-number">24/7</div>
+                  <div className="stat-label">Поддержка</div>
+                </div>
               </div>
-            ))}
+            </div>
+            
+            <div className="advantages-grid">
+              {advantages.map((advantage, index) => (
+                <div key={index} className="advantage-card">
+                  <div className="advantage-icon">
+                    {advantage.icon}
+                  </div>
+                  <h3 className="heading-3 advantage-title">{advantage.title}</h3>
+                  <p className="body-medium advantage-description">
+                    {advantage.description}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
