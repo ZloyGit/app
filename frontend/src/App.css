@@ -173,16 +173,56 @@ body {
 
 .dark-logo-container {
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
 }
 
 .dark-logo-container:hover {
   transform: scale(1.05);
+  border-color: var(--brand-primary);
+  background: rgba(0, 255, 209, 0.1);
+  box-shadow: 0 4px 16px rgba(0, 255, 209, 0.2);
 }
 
 .dark-logo {
   height: 40px;
   object-fit: contain;
+  filter: brightness(1.1) contrast(1.1);
+  transition: all 0.3s ease;
+}
+
+.dark-logo-container:hover .dark-logo {
+  filter: brightness(1.3) contrast(1.2);
+}
+
+/* Улучшенный логотип в footer */
+.footer-logo-container {
+  margin-bottom: 16px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.footer-logo-container:hover {
+  border-color: var(--brand-primary);
+  background: rgba(0, 255, 209, 0.1);
+}
+
+.footer-logo {
+  height: 40px;
+  filter: brightness(1.1);
+  transition: all 0.3s ease;
+}
+
+.footer-logo-container:hover .footer-logo {
+  filter: brightness(1.3);
 }
 
 .dark-nav {
