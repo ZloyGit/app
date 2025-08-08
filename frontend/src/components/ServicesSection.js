@@ -86,8 +86,15 @@ const ServicesSection = () => {
         <div className="services-grid">
           {services.map((service, index) => (
             <Card key={index} className="service-card">
-              <div className="service-icon">
-                {service.icon}
+              <div className="service-image">
+                <img 
+                  src={service.image} 
+                  alt={service.title}
+                  className="service-img"
+                />
+                <div className="service-icon-overlay">
+                  {service.icon}
+                </div>
               </div>
               
               <div className="service-content">
