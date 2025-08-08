@@ -19,11 +19,13 @@ const Footer = () => {
       <div className="dark-content-container">
         <div className="footer-content">
           <div className="footer-brand">
-            <img 
-              src="https://customer-assets.emergentagent.com/job_65f90f92-7d11-4728-bbe9-414a443b150f/artifacts/dse4487x_80290118.png" 
-              alt="IT-ВОСТОК" 
-              className="footer-logo"
-            />
+            <div className="footer-logo-container">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_65f90f92-7d11-4728-bbe9-414a443b150f/artifacts/dse4487x_80290118.png" 
+                alt="IT-ВОСТОК" 
+                className="footer-logo"
+              />
+            </div>
             <p className="body-medium footer-description">
               Профессиональные IT-услуги для развития вашего бизнеса. 
               Специализируемся на 1С и серверных решениях.
