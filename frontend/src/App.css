@@ -803,6 +803,15 @@ body {
   .dark-header-content {
     padding: 0 5%;
   }
+  
+  .hero-grid {
+    gap: 40px;
+  }
+  
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -822,16 +831,34 @@ body {
     padding: 0 20px;
   }
   
-  .display-huge {
-    font-size: 42px;
-  }
-  
-  .display-large {
-    font-size: 36px;
+  .dark-header {
+    height: 70px;
   }
   
   .hero-section {
-    padding: 120px 0 60px;
+    padding: 100px 0 60px;
+  }
+  
+  .display-huge {
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+  }
+  
+  .display-large {
+    font-size: 32px;
+    line-height: 1.2;
+    text-align: center;
+  }
+  
+  .display-medium {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+  
+  .body-large {
+    font-size: 18px;
+    text-align: center;
   }
   
   .hero-grid {
@@ -842,14 +869,43 @@ body {
   
   .hero-stats {
     justify-content: center;
+    gap: 24px;
+  }
+  
+  .stat-item {
+    text-align: center;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
   }
   
   .tech-grid {
     margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  
+  .tech-card {
+    padding: 24px 16px;
   }
   
   .services-grid {
     grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .service-card {
+    padding: 32px 24px;
   }
   
   .about-grid {
@@ -859,6 +915,18 @@ body {
   
   .advantages-grid {
     grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .advantage-card {
+    padding: 24px;
+  }
+  
+  .about-stats {
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
   }
   
   .contact-grid {
@@ -868,19 +936,90 @@ body {
   
   .form-row {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .contact-card {
+    padding: 24px;
+  }
+  
+  .contact-form-card {
+    padding: 32px 24px;
   }
   
   .footer-content {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 32px;
+    text-align: center;
+  }
+  
+  .footer-brand {
+    text-align: center;
   }
   
   .footer-bottom-content {
     flex-direction: column;
     text-align: center;
+    gap: 16px;
   }
   
-  .about-stats {
-    justify-content: center;
+  .section-header {
+    margin-bottom: 60px;
+  }
+  
+  .services-section, .about-section, .contact-section {
+    padding: 80px 0;
+  }
+  
+  .mobile-nav-link {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dark-content-container {
+    padding: 0 16px;
+  }
+  
+  .dark-header-content {
+    padding: 0 16px;
+  }
+  
+  .display-huge {
+    font-size: 32px;
+  }
+  
+  .display-large {
+    font-size: 28px;
+  }
+  
+  .hero-stats {
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stat-item {
+    width: 100%;
+  }
+  
+  .tech-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    max-width: 250px;
+  }
+  
+  .service-card, .contact-card, .advantage-card {
+    padding: 24px 16px;
+  }
+  
+  .contact-form-card {
+    padding: 24px 16px;
+  }
+  
+  .btn-primary, .btn-secondary {
+    padding: 12px 20px;
+    font-size: 16px;
+    min-height: 48px;
   }
 }
