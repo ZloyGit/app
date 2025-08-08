@@ -217,12 +217,7 @@ body {
 
 .footer-logo {
   height: 40px;
-  filter: brightness(1.1);
-  transition: all 0.3s ease;
-}
-
-.footer-logo-container:hover .footer-logo {
-  filter: brightness(1.3);
+  margin-bottom: 16px;
 }
 
 .dark-nav {
