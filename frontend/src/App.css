@@ -1013,10 +1013,44 @@ body {
     margin: 0 auto;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
+    max-width: 300px;
   }
   
   .tech-card {
-    padding: 24px 16px;
+    padding: 20px 16px;
+  }
+  
+  .hero-image {
+    height: 300px;
+    margin-bottom: 24px;
+  }
+  
+  .hero-image-overlay {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    background: var(--bg-secondary);
+    backdrop-filter: none;
+    border-radius: 8px;
+    padding: 16px;
+    border: 1px solid var(--border-subtle);
+  }
+  
+  .hero-image-overlay .tech-grid {
+    max-width: 100%;
+  }
+  
+  .about-image {
+    height: 250px;
+    margin-bottom: 24px;
+  }
+  
+  .about-image-stats {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    justify-content: center;
+    margin-top: 16px;
   }
   
   .services-grid {
