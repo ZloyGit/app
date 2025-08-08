@@ -62,22 +62,31 @@ const HeroSection = () => {
           </div>
 
           <div className="hero-visual">
-            <div className="tech-grid">
-              <div className="tech-card">
-                <Server size={32} />
-                <span>Серверы</span>
-              </div>
-              <div className="tech-card">
-                <Network size={32} />
-                <span>Сети</span>
-              </div>
-              <div className="tech-card">
-                <Monitor size={32} />
-                <span>1С</span>
-              </div>
-              <div className="tech-card">
-                <Shield size={32} />
-                <span>Безопасность</span>
+            <div className="hero-image">
+              <img 
+                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwxfHxJVCUyMHNlcnZpY2VzfGVufDB8fHx8MTc1NDYxMzMyNHww&ixlib=rb-4.1.0&q=85"
+                alt="IT консультации и услуги"
+                className="hero-main-image"
+              />
+              <div className="hero-image-overlay">
+                <div className="tech-grid">
+                  <div className="tech-card">
+                    <Server size={28} />
+                    <span>Серверы</span>
+                  </div>
+                  <div className="tech-card">
+                    <Network size={28} />
+                    <span>Сети</span>
+                  </div>
+                  <div className="tech-card">
+                    <Monitor size={28} />
+                    <span>1С</span>
+                  </div>
+                  <div className="tech-card">
+                    <Shield size={28} />
+                    <span>Безопасность</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
