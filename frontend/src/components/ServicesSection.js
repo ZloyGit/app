@@ -16,6 +16,7 @@ const ServicesSection = () => {
   const services = [
     {
       icon: <Database size={48} />,
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwzfHxJVCUyMHNlcnZpY2VzfGVufDB8fHx8MTc1NDYxMzMyNHww&ixlib=rb-4.1.0&q=85",
       title: "Обслуживание 1С",
       description: "Полный цикл работ с системами 1С: обновления, доработки, создание обработок под ключ",
       features: [
@@ -27,6 +28,7 @@ const ServicesSection = () => {
     },
     {
       icon: <Server size={48} />,
+      image: "https://images.pexels.com/photos/1054397/pexels-photo-1054397.jpeg",
       title: "Настройка серверов",
       description: "Профессиональная настройка и круглосуточный мониторинг серверной инфраструктуры",
       features: [
@@ -38,6 +40,7 @@ const ServicesSection = () => {
     },
     {
       icon: <Network size={48} />,
+      image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwyfHx0ZWNobm9sb2d5JTIwYnVzaW5lc3N8ZW58MHx8fHwxNzU0NjEzMzI5fDA&ixlib=rb-4.1.0&q=85",
       title: "Монтаж сетей",
       description: "Проектирование и монтаж современных сетевых решений для вашего офиса",
       features: [
@@ -49,6 +52,7 @@ const ServicesSection = () => {
     },
     {
       icon: <Eye size={48} />,
+      image: "https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20%281%20of%201%29-5.jpg?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwYnVzaW5lc3N8ZW58MHx8fHwxNzU0NjEzMzI5fDA&ixlib=rb-4.1.0&q=85",
       title: "Видеонаблюдение",
       description: "Установка и настройка современных систем видеонаблюдения любой сложности",
       features: [
